@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color: rgb(30, 62, 204);
+    --secondary-color: rgb(21, 33, 65);
+    --primary-font-color: rgb(255, 255, 255);
+    --button-hover: rgb(166, 216, 235);
+    --shadow-border-color: rgb(2, 33, 36);
+}
+body {
+    background-color: #5e9cee;
+}
+span {
+    background-color: rgba(166, 216, 235, 0.70);
+    padding: 5px;
+}
+/* Head Nav */
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(
+        rgba(121, 184, 175, 0.253),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../assets/images/herobackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 32px;
+    color: var(--primary-font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--button-hover);
+    color: var(--primary-font-color);
+    border-radius: 15px;
+  }
+  
+  /* Hero Image */
+  .hero {
+    background-image: url("../images/tron2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-bottom: 5px solid var(--shadow-border-color);
+    background-image: linear-gradient(
+        rgba(121, 184, 175, 0.253),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../assets/images/herobackground.jpg");
+  }
+  
+  .hero-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-font-color);
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+  }
+  
+  
+  
+  /* Body */
+  .main {
+    display: flex;
+  }
+  
+  .body-title {
+    border-right: 3px solid var(--secondary-color);
+    margin: 5px 0px 10px 10px;
+    padding: 5px 10px 10px 10px;
+    left: 0;
+    flex: 1 20%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .body-title h2 {
+    font-family: Arial, Helvetica, sans-serif;;
+    color: var(--primary-font-color);
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+    font-size: 2rem;
+  }
+  
+  .body-box {
+    margin: 10px 10px 10px 20px;
+    flex: 2 80%;
+    flex-wrap: wrap;
+  }
+  
+  /* About Me Section */
+  .body-box p {
+    color: var(--shadow-border-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align:justify;
+  }
+  
+  .body-box p img {
+    float:right;
+    margin: 10px;
+  }
+  
+  /* Work Section*/
+  .work-wrapper {
+    display: grid;
+    margin: 10px 10px 10px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+  }
+  
+  .work-grid {
+    border: 3px solid var(--shadow-border-color);
+    display: flex;
+    align-items: flex-end;
+  
+  }
+  
+  .work-grid a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-font-color);
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+  }
+  
+  .title-link {
+    flex: wrap;
+    justify-content: flex-end;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: var(--button-hover);
+    opacity: 80%;
+  }
+  
+  .run-buddy {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background: url(../assets/images/runbuddyss.png);
+    background: cover;
+  }
+  
+  .horiseon {
+    background: url(../assets/images/horiseon.png);
+    background-size: cover;
+    text-align: bottom;
+  }
+  
+  .workScheduler {
+    background: url(../assets/images/workdayscheduler.png);
+    background-size: cover;
+  }
+
+  .passwordGen {
+    background: url(../assets/images/passwordgenerator.png);
+    background-size: cover;
+  }
+
+  .cinemaSearch {
+    background: url(../assets/images/cinemasearch.png);
+    background-size: cover;
+  }
+  
+  /* Contact Me Section */
+  .contact-wrapper {
+    display: grid;
+    margin: 10px 10px 10px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+    grid-gap: 30px;
+  }
+  
+  .contact-grid a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    text-shadow: -1px 0px 3px var(--shadow-border-color),
+      -1px 0px 3px var(--shadow-border-color);
+    border-bottom: 3px solid var(--shadow-border-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: space-around;
+  }
