@@ -215,6 +215,11 @@ header {
     background: url(../assets/images/cinemasearch.png);
     background-size: cover;
   }
+
+  .back2Work {
+    background: url(../assets/images/back2work.png);
+    background-size: cover;
+  }
   
   /* Contact Me Section */
   .contact-wrapper {
